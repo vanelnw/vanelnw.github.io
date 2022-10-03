@@ -4,8 +4,7 @@ This project is our first project in microverse. It is a first part in process o
 
 Built With : html , css
 
-Live Demo :  https://www.vanelnw.github.io
-
+Live Demo : https://vanelnw.github.io/
 
 Getting Started
 
