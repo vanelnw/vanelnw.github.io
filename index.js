@@ -3,7 +3,7 @@ const menulist = document.getElementById('myLinks');
 const burgerMenu = document.getElementById('mobile-menu');
 const logo = document.querySelector('.logo');
 
-function myFunction() {
+burgerMenu.addEventListener('click', () => {
   if (menulist.style.display === 'block') {
     menulist.style.display = 'none';
     menulist.classList.remove('menu-list-show');
@@ -13,7 +13,7 @@ function myFunction() {
     logo.style.display = 'none';
     menulist.classList.add('menu-list-show');
   }
-}
+});
 
 close.addEventListener('click', () => {
   menulist.style.display = 'none';
