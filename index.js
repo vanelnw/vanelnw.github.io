@@ -1,12 +1,13 @@
 const close = document.querySelector(".close-menu");
-var menulist = document.getElementById("myLinks");
-var burgerMenu = document.getElementById("mobile-menu");
-var logo = document.querySelector(".logo");
+const menulist = document.getElementById("myLinks");
+const burgerMenu = document.getElementById("mobile-menu");
+const logo = document.querySelector(".logo");
 
 function myFunction() {
     
     if (menulist.style.display === "block") {
         menulist.style.display = "none";
+        menulist.classList.remove('menu-list-show');
     } else {
       menulist.style.display = "block";
       burgerMenu.style.display = "none";
