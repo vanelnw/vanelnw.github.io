@@ -4,21 +4,35 @@ const burgerMenu = document.getElementById("mobile-menu");
 const logo = document.querySelector(".logo");
 
 function myFunction() {
-    
-    if (menulist.style.display === "block") {
-        menulist.style.display = "none";
-        menulist.classList.remove('menu-list-show');
-    } else {
-      menulist.style.display = "block";
-      burgerMenu.style.display = "none";
-      logo.style.display = "none";
-      menulist.classList.add('menu-list-show');
-    }
+  if (menulist.style.display === "block") {
+    menulist.style.display = "none";
+    menulist.classList.remove("menu-list-show");
+  } else {
+    menulist.style.display = "block";
+    burgerMenu.style.display = "none";
+    logo.style.display = "none";
+    menulist.classList.add("menu-list-show");
   }
-  
+}
+
 close.addEventListener("click", () => {
+  menulist.style.display = "none";
+  burgerMenu.style.display = "block";
+  logo.style.display = "block";
+  menulist.classList.remove("menu-list-show");
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("menu-link")) {
     menulist.style.display = "none";
     burgerMenu.style.display = "block";
     logo.style.display = "block";
-    menulist.classList.remove('menu-list-show');
+    menulist.classList.remove("menu-list-show");
+  }
+  if (e.target.classList.contains("link")) {
+    menulist.style.display = "none";
+    burgerMenu.style.display = "block";
+    logo.style.display = "block";
+    menulist.classList.remove("menu-list-show");
+  }
 });
