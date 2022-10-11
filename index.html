@@ -13,15 +13,16 @@
     <main>
       <header>
         <div class="toolbar">
-          <a href="">John Doe</a>
-          <i><img src="./assets//menu.png" /></i>
-          <nav class="menu">
-            <ul>
+          <a class="logo" href="">John Doe</a>
+          <i><img id="mobile-menu" src="./assets//menu.png" onclick="myFunction()"/></i>
+          <nav id="myLinks" class="menu">
+            <a class="close-menu" href="#">Close</a>
+            <ul class="menu-list">
               <li><a href="#Portfolio">Portfolio</a></li>
               <li><a href="#About">About</a></li>
               <li><a href="#Contact">Contact</a></li>
             </ul>
-            <img src="./assets/letter.png" />
+            <img class="email-icon" src="./assets/letter.png" />
           </nav>
         </div>
       </header>
@@ -311,5 +312,7 @@
         </div>
       </section>
     </main>
+
+    <script src="index.js"></script>
   </body>
 </html>

@@ -28,7 +28,7 @@ header {
 
 .toolbar {
   background-color: #3c3a39;
-  height: 48px;
+  max-height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,12 +54,39 @@ header {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+.menu-list-show {
+  position: relative;
+  top: 10px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  line-height: 40px;
+  background-color: #3C3A39;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolbar .menu ul {
+  display: block;
+}
+
+.email-icon {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
   .toolbar {
     padding: 0 100px;
     height: 72px;
   }
-
+  .email-icon {
+    display: block;
+  }
+  
+  .close-menu {
+    display: none;
+  }
   .toolbar i {
     display: none;
   }
