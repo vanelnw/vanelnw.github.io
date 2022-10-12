@@ -10,7 +10,7 @@ For this repository, I've created html templates, styling and javascript files i
 - javascript
 - Git & Github
 
-## Live Demo (if available)
+## Live Demo 
 
 [Live Demo Link](https://vanelnw.github.io/)
 
