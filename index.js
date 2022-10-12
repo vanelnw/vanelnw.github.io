@@ -67,7 +67,7 @@ const workDetailsInfos = [
     sourceLink: 'https://github.com/vanelnw/vanelnw.github.io',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'Multi-Post Storie',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     image: './assets/work-img-3.png',
@@ -94,7 +94,7 @@ const workDetailsInfos = [
     sourceLink: 'https://github.com/vanelnw/vanelnw.github.io',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'Multi-Post Storie',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     image: './assets/work-img-3.png',
