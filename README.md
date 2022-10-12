@@ -1,23 +1,67 @@
-# Microverse-project-1
 
-This project is our first project in microverse. It is a first part in process of creating our portfolio website.
+# Project Name : Portfolio Project
 
-Built With : html , css
+For this repository, I've created html templates, styling and javascript files in order to built a responsive portfolio ,  which can help to easy explorate  profiles from differents devices.
 
-Live Demo : https://vanelnw.github.io/
+## Built With
 
-Getting Started
+- Html
+- Css
+- javascript
+- Git & Github
 
-To get a local copy up and running clone this repository and open it in your code editor.
+## Live Demo (if available)
 
-👤 Author
+[Live Demo Link](https://vanelnw.github.io/)
 
-GitHub: @vanelnw Twitter: @vanelnw LinkedIn: LinkedIn
+### Install
 
-🤝 Contributing Contributions, issues, and feature requests are welcome!
+To get a local copy up and running follow these simple example steps.
+- Open terminal
+- Clone this project by the command: 
 
-Feel free to check the issues page.
+$ git clone https://github.com/vanelnw/vanelnw.github.io.git
 
-Show your support Give a ⭐️ if you like this project!
+- Then go to the main folder using the next command:
 
-Acknowledgments Hat tip to anyone whose code was used Inspiration etc 📝 License This project is MIT licensed.
+$ cd vanelnw.github.io
+
+- Finally, run diplay the index.html file in your local browser, or also, you can use Live Server in Visual Studio Code.
+
+### Prerequisites
+
+- IDE to edit and run the code (We use Visual Studio Code 🔥).
+- Git to versionning your work.
+
+### Usage
+
+- For anyone who wants to practice html5, css3 or/and javascript
+- For anyone who wants to create his own portfolio.
+
+## Authors
+
+👤 **Nwaba Vanel**
+
+- GitHub: [@githubhandle](https://github.com/vanelnw)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/va-nw)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- Microverse program
+- My family's support
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
