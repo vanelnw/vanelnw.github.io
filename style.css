@@ -355,12 +355,6 @@ button:hover {
   justify-content: end;
 }
 
-.layer .title {
-  font-family: "Crete Round", sans-serif;
-  font-size: 40px;
-  
-}
-
 .work-container .work-card .layer .title {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
