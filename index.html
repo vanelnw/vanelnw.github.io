@@ -10,7 +10,7 @@
     />
   </head>
   <body>
-    <main>
+    
       <header>
         <div class="toolbar">
           <a class="logo" href="">John Doe</a>
@@ -60,26 +60,15 @@
           </ul>
         </div>
       </section>
-      <section class="works" id="Portfolio">
-        <div class="title">
-          <h2>My Recent Works</h2>
-          <hr />
-        </div>
-        <div class="work-container">
-          <div class="hero-work">
-            <img src="./assets//hero-work.png" alt="hero" />
-
-            <h2>Multi-Post Stories</h2>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <ul>
-              <li>
-                <div class="work-cart">css</div>
-              </li>
+      <div class="work-popup">
+        <div class="work-popup-content">
+          <div class="work-popup-close">
+            <img src="./assets/close.png" />
+          </div>
+          <div class="work-popup-top">
+            <h2 class="popup-top-title">
+            </h2>
+            <ul class="popup-list">
               <li>
                 <div class="work-cart">html</div>
               </li>
@@ -90,146 +79,36 @@
                 <div class="work-cart">Ruby</div>
               </li>
             </ul>
-            <button>See Project</button>
           </div>
-          <div class="work-card">
-            <img src="./assets/workimg.png" />
-            <div class="layer">
-              <div class="title">Profesional Art Printing Data</div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul>
-                <li>
-                  <div class="work-cart">html</div>
-                </li>
-                <li>
-                  <div class="work-cart">bootstrap</div>
-                </li>
-                <li>
-                  <div class="work-cart">Ruby</div>
-                </li>
-              </ul>
-              <button>See Project</button>
+          <div class="work-popup-bottom">
+            <div class="work-popup-img">
+              <img class="popup-img" src="./assets//hero-work.png" alt="hero" />
             </div>
-          </div>
-          <div class="work-card">
-            <img src="./assets/workimg.png" />
-            <div class="layer">
-              <div class="title">Profesional Art Printing Data</div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
+            <div class="work-popup-info">
+              <p class="popup-info-desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it 1960s with the releaLorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it 1960s with the releax map lapora verita.
               </p>
-              <ul>
-                <li>
-                  <div class="work-cart">html</div>
-                </li>
-                <li>
-                  <div class="work-cart">bootstrap</div>
-                </li>
-                <li>
-                  <div class="work-cart">Ruby</div>
-                </li>
-              </ul>
-              <button>See Project</button>
-            </div>
-          </div>
-          <div class="work-card">
-            <img src="./assets/workimg.png" />
-            <div class="layer">
-              <div class="title">Profesional Art Printing Data</div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul>
-                <li>
-                  <div class="work-cart">html</div>
-                </li>
-                <li>
-                  <div class="work-cart">bootstrap</div>
-                </li>
-                <li>
-                  <div class="work-cart">Ruby</div>
-                </li>
-              </ul>
-              <button>See Project</button>
-            </div>
-          </div>
-          <div class="work-card">
-            <img src="./assets/workimg.png" />
-            <div class="layer">
-              <div class="title">Profesional Art Printing Data</div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul>
-                <li>
-                  <div class="work-cart">html</div>
-                </li>
-                <li>
-                  <div class="work-cart">bootstrap</div>
-                </li>
-                <li>
-                  <div class="work-cart">Ruby</div>
-                </li>
-              </ul>
-              <button>See Project</button>
-            </div>
-          </div>
-          <div class="work-card">
-            <img src="./assets/workimg.png" />
-            <div class="layer">
-              <div class="title">Profesional Art Printing Data</div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul>
-                <li>
-                  <div class="work-cart">html</div>
-                </li>
-                <li>
-                  <div class="work-cart">bootstrap</div>
-                </li>
-                <li>
-                  <div class="work-cart">Ruby</div>
-                </li>
-              </ul>
-              <button>See Project</button>
-            </div>
-          </div>
-          <div class="work-card">
-            <img src="./assets/workimg.png" />
-            <div class="layer">
-              <div class="title">Profesional Art Printing Data</div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard
-              </p>
-              <ul>
-                <li>
-                  <div class="work-cart">html</div>
-                </li>
-                <li>
-                  <div class="work-cart">bootstrap</div>
-                </li>
-                <li>
-                  <div class="work-cart">Ruby</div>
-                </li>
-              </ul>
-              <button>See Project</button>
+              <div class="work-popup-btn">
+                <button class="see-live">See Live <img src="./assets/see-demo.png" alt="see-demo"/></button>
+                <button class="see-source">See Source <img src="./assets/see-source.png" alt="see-source"/></button>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+
       <section class="about" id="About">
         <div class="top">
           <h2>About me</h2>
-          <p>
+          <p class="about-desc">
             Hello I’m a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
             you like what you see and have a project you need coded, don’t
@@ -239,7 +118,7 @@
         </div>
         <hr />
         <div class="bottom">
-          <ul>
+          <ul class="about-main-list">
             <li>
               <div class="language">
                 <img src="./assets/losange.png" />
@@ -333,7 +212,7 @@
           </ul>
         </div>
       </section>
-    </main>
+    
 
     <script src="index.js"></script>
   </body>
