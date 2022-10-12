@@ -155,30 +155,29 @@ workSection.append(workSectionContainer);
 body.insertBefore(workSection, body.children[2]);
 // work popup
 function togglePopup() {
-    document.querySelector('.work-popup').classList.toggle('open');
+  document.querySelector('.work-popup').classList.toggle('open');
+}
+
+function workItemDetails(workItem) {
+  const details = workDetailsInfos.filter(
+    (x) => x.name === workItem.querySelector('.title').innerText,
+  );
+
+  document.querySelector('.popup-img').src = details[0].image;
+  document.querySelector('.popup-top-title').innerText = details[0].name;
+  document.querySelector('.popup-info-desc').innerText = details[0].description;
+
+  const seeDemo = document.querySelector('.see-live');
+  const seeSource = document.querySelector('.see-source');
+  seeDemo.setAttribute('onclick', `location.href= '${details[0].liveLink}'`);
+  seeSource.setAttribute('onclick', `location.href= '${details[0].sourceLink}'`);
+}
+
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('see-button')) {
+    togglePopup();
+    workItemDetails(e.target.parentElement.parentElement);
   }
-  
-  function workItemDetails(workItem) {
-    const details = workDetailsInfos.filter(
-      (x) => x.name === workItem.querySelector('.title').innerText,
-    );
-  
-    document.querySelector('.popup-img').src = details[0].image;
-    document.querySelector('.popup-top-title').innerText = details[0].name;
-    document.querySelector('.popup-info-desc').innerText = details[0].description;
-  
-    const seeDemo = document.querySelector('.see-live');
-    const seeSource = document.querySelector('.see-source');
-    seeDemo.setAttribute('onclick', `location.href= '${details[0].liveLink}'`);
-    seeSource.setAttribute('onclick', `location.href= '${details[0].sourceLink}'`);
-  }
-  
-  document.addEventListener('click', (e) => {
-    if (e.target.classList.contains('see-button')) {
-      togglePopup();
-      workItemDetails(e.target.parentElement.parentElement);
-    }
-  });
-  
-  document.querySelector('.work-popup-close').addEventListener('click', togglePopup);
-  
+});
+
+document.querySelector('.work-popup-close').addEventListener('click', togglePopup);
