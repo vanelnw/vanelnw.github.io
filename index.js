@@ -200,7 +200,10 @@ form.addEventListener('submit', (e) => {
   }
 
   // check if email is lowercase
-  
+  if (!isLowerCase(email.value)) {
+    message = 'email must be in lowercase';
+    email.classList.add('invalid');
+  }
 });
 
 email.addEventListener('input', () => {
