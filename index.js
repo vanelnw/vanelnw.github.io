@@ -204,6 +204,12 @@ form.addEventListener('submit', (e) => {
     message = 'email must be in lowercase';
     email.classList.add('invalid');
   }
+
+  //check if message is not empty
+  if (message !== '') {
+    e.preventDefault();
+    errorElemrnt.innerText = message;
+  }
 });
 
 email.addEventListener('input', () => {
