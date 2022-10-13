@@ -205,7 +205,7 @@ form.addEventListener('submit', (e) => {
     email.classList.add('invalid');
   }
 
-  //check if message is not empty
+  // check if message is not empty
   if (message !== '') {
     e.preventDefault();
     errorElemrnt.innerText = message;
