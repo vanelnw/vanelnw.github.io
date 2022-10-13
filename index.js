@@ -181,3 +181,38 @@ document.addEventListener('click', (e) => {
 });
 
 document.querySelector('.work-popup-close').addEventListener('click', togglePopup);
+
+// form validation
+
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const errorElemrnt = document.querySelector('.error');
+
+function isLowerCase(input) {
+  return input === String(input).toLowerCase();
+}
+
+form.addEventListener('submit', (e) => {
+  let message = '';
+
+  if (email.value === '' || email.value === null) {
+    message.push('email is required');
+  }
+
+  // check if email is lowercase
+  if (!isLowerCase(email.value)) {
+    message = 'email must be in lowercase';
+    email.classList.add('invalid');
+  }
+
+  // check if message is not empty
+  if (message !== '') {
+    e.preventDefault();
+    errorElemrnt.innerText = message;
+  }
+});
+
+email.addEventListener('input', () => {
+  email.classList.remove('invalid');
+  errorElemrnt.innerText = '';
+});
