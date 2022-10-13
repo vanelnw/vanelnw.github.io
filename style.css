@@ -725,12 +725,28 @@ button:hover {
   gap: 24px;
 }
 
+.contact .contact-form form .error {
+  color: red;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.contact .contact-form form .get-in-touch {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .contact input {
   width: 100%;
   border: none;
   outline: none;
   border-bottom: 1px solid #dbd8d7;
   padding: 14px;
+}
+
+.contact .invalid {
+  border: 1px solid rgb(244, 89, 89);
 }
 
 .contact textarea {
@@ -768,5 +784,9 @@ button:hover {
   .contact .contact-form h2 {
     max-width: 300px;
     text-align: left;
+  }
+
+  .contact .contact-form form .get-in-touch {
+    flex-direction: row;
   }
 }
