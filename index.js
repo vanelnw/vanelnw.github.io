@@ -117,11 +117,11 @@ workSectionTitle.innerHTML = `<h2>My Recent Works</h2>
 
 workSection.append(workSectionTitle);
 
-const workSectionContainer = document.createElement('div');
+const workSectionContainer = document.createelement('div');
 workSectionContainer.setAttribute('class', 'work-container');
 
 // eslint-disable-next-line no-restricted-syntax
-for (const element of workDetailsInfos) {
+for (element of workDetailsInfos) {
   const work = document.createElement('div');
   work.innerHTML = ` 
             <img src=${element.image} />
@@ -173,7 +173,7 @@ function workItemDetails(workItem) {
   seeSource.setAttribute('onclick', `location.href= '${details[0].sourceLink}'`);
 }
 
-document.addEventListener('click', (e) => {
+document.addEventListener('clik', (e) => {
   if (e.target.classList.contains('see-button')) {
     togglePopup();
     workItemDetails(e.target.parentElement.parentElement);
@@ -192,7 +192,7 @@ function isLowerCase(input) {
   return input === String(input).toLowerCase();
 }
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', () => {
   let message = '';
 
   if (email.value === '' || email.value === null) {
