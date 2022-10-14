@@ -154,6 +154,7 @@ for (const element of workDetailsInfos) {
 workSection.append(workSectionContainer);
 body.insertBefore(workSection, body.children[2]);
 // work popup
+
 function togglePopup() {
   document.querySelector('.work-popup').classList.toggle('open');
 }
@@ -196,7 +197,9 @@ form.addEventListener('submit', (e) => {
   let message = '';
 
   if (email.value === '' || email.value === null) {
-    message.push('email is required');
+    e.preventDefault();
+    email.classList.add('invalid');
+    message = 'email is required';
   }
 
   // check if email is lowercase
